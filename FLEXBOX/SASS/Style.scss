@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flexcontainer{
+    background: dodgerblue;
+    display: flex;
+    height: 80vh;
+    //flex-direction: column-reverse;
+    //flex-wrap: nowrap; //el papa se ajusta a los hijos 
+    //flex-wrap: wrap; //los hijos se ajustan al padre
+    //flex-flow: column nowrap; //se puede combinar propiedades
+    //justify-content: space-between; //acomodar los cuadros
+    //align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+
+.flexcontainer>div{
+    background: lightskyblue;
+    width: 17%;
+    height: 17vh;
+    margin: 3px 5px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}

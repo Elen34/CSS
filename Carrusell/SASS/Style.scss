@@ -1,0 +1,47 @@
+body{
+    padding:0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    margin:auto; //divide entre dos el cuadro en cada lado
+    overflow: hidden; // todos lo que sobraba lo oculta
+}
+
+.slider>ul{
+
+    display: flex;
+    padding: 0; //imagen se recorra a la izq
+    width: 400%; // ul tiene 4 imagenes y cada imagen vale 100% y por eso tiene un width de 400%
+    //margin-left: -300%; 
+    animation: slide 10s linear infinite alternate;
+}
+//infinitie para no pare la animacion
+//para que cuando llegue la ultima imagen se regrese para atras
+
+.slider>ul>li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider>ul>li>img{
+    width: 100%;
+    //height: 100%;
+}
+
+@keyframes slide{
+
+0%{margin-left: 0%;} // la imagen se va a mantener
+20%{margin-left: 0%;} //Se mantenga la imagen el ese lugar
+25%{margin-left: -100%;}
+45%{margin-left: -100%;}
+50%{margin-left: -200%;}
+70%{margin-left: -200%;}
+75%{margin-left: -300%;}
+100%{margin-left: -300%;}
+}

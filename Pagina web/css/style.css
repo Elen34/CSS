@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Pangolin&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background: lightgray;
+  width: "90%";
+  height: 20vh;
+  position: relative;
+  border: 2px solid white;
+  margin: 3px 3px;
+}
+
+h1 {
+  font-family: "Pangolin", sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-weight: bold;
+  font-size: 50px;
+  font-style: italic;
+}
+
+#font {
+  font-family: "Bangers", sans-serif;
+  color: green;
+  position: absolute;
+  top: 25%;
+  left: 110%;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-style: initial;
+  font-size: 75%;
+}
+
+article {
+  background: lightgreen;
+  width: 85%;
+  height: 80vh;
+  margin: 1px;
+  float: left;
+  position: absolute;
+  border: 1px solid white;
+}
+
+article > div > h2 {
+  font-family: sans-serif;
+  color: black;
+  margin: 2px;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+article > div > #subtitulo2 {
+  font-family: sans-serif;
+  color: black;
+  margin-left: 50%;
+  margin-bottom: 10%;
+  top: 1%;
+}
+
+article > div > #subtitulo3 {
+  font-family: sans-serif;
+  color: black;
+  top: 33%;
+}
+
+#parrafo1 {
+  margin: 5px 5px;
+  width: 40%;
+  height: 50px;
+  text-align: justify;
+  float: right;
+  position: absolute;
+  top: 7%;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+#parrafo2 {
+  margin: 5px 5px;
+  width: 50%;
+  height: 50px;
+  text-align: justify;
+  float: right;
+  position: absolute;
+  top: 7%;
+  left: 47%;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+#parrafo3 {
+  margin: 5px 5px;
+  width: 35%;
+  height: 50px;
+  text-align: justify;
+  float: right;
+  position: absolute;
+  top: 40%;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+img {
+  margin: 10px 10px;
+  width: 51vw;
+  height: 50vh;
+  background: lightgreen;
+  position: absolute;
+  left: 37%;
+  top: 31%;
+}
+
+aside {
+  width: 10%;
+  height: 60vh;
+  float: left;
+  position: relative;
+}
+
+#caja1 {
+  border: 2px solid white;
+  background: lightgreen;
+  width: 142%;
+  height: 20vh;
+  margin: 1px;
+  left: 850%;
+  position: absolute;
+}
+
+#caja2 {
+  background: lightgrey;
+  width: 142%;
+  height: 40vh;
+  border: 2px solid white;
+  margin: 1px;
+  position: absolute;
+  left: 850%;
+  top: 33%;
+}
+
+footer {
+  background: lightgreen;
+  width: 85%;
+  height: 6vh;
+  text-align: center;
+  clear: both;
+  margin: 2px;
+  border: 1px solid white;
+  position: absolute;
+  top: 102%;
+}
+
+h6 {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 155%;
+  text-align: center;
+  margin-left: 10%;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    position: absolute;
+    top: calc(50% - 200px); // se aplica cuando se conoce el tamaño del elemento
+    left: calc(50% - 150px); // se aplica cuando se conoce el tamaño del elemento
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d; //Para hacerla en 3d
+    perspective: 700px; //Se maneja en pixeles
+}
+
+.card .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0deg);
+    transition: 0.5s; //lo que dura en voltearse
+    backface-visibility: hidden; //ocutar una imagen
+}
+
+
+.card:hover .front{
+    transform: rotateX(-180deg);   //girar la imagen en rotacion en x
+}
+
+.card .front > img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .back{
+    transform: rotateX(0deg);  //girar el cuadro en rotacion en x
+}
+
+.card .back .details{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%); //Mover el elemento de lugar de acuerdo a la medida
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; //ajustar la medida de dos cajas que no son del mismo tamaño
+}
+
+.back .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.card .back .details h2 span{
+    color: green;
+    font-size: 18px;
+}
+
+.socialIcons{
+    padding: 10px 0px;
+}
+
+.socialIcons a{
+    display: inline-block;  //mantiene el diseño tipo linea pero se puede dar diseño tipo bloque
+    background: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none; //eliminar la linea de enlace
+}
+
+.socialIcons a .fa{
+    line-height:40px; //centrar texto verticalmente
+}
+
+.card .back::before{ //before no tiene estilo, solo se utilizar para cubrir algo
+    content: ''; //Siempre se utiliza el contenido
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 228, 228);
+}
